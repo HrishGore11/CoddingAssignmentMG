@@ -48,6 +48,7 @@ export default function Home() {
   const [Key, setKey] = useState(0);
   const [Data, setData] = useState({});
   const handleOpen = (rows) => {
+    console.log(rows);
     setOpen(true);
     setData(rows);
   };
@@ -78,6 +79,7 @@ export default function Home() {
       .then((data) => {
         console.log(data.data);
         setrow1(data.data.data);
+        setKey(0);
         console.log(row1);
       })
       .catch((err) => {
@@ -86,15 +88,16 @@ export default function Home() {
   };
 
   ///////////////////////////Verify Key
-  const Verify = (id, path, mimetype, fileKey, Key) => {
-    console.log(id, path, mimetype);
-    if (Key === 0) {
+  const Verify = (id1, path1, mimetype1, fileKey, Key) => {
+    // console.log(id, path, mimetype);
+    if (Key === 0 || Key === "") {
       return alert("key Field cannot be Empty");
     } else {
       if (fileKey !== Key) {
         return alert("Incorrect Key");
       } else {
-        return Downloadfile(id, path, mimetype);
+        Downloadfile(id1, path1, mimetype1);
+        setOpen(false);
       }
     }
   };
@@ -260,16 +263,16 @@ export default function Home() {
                 <button
                   class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-fullWidth MuiButtonBase-root css-oagsia"
                   tabindex="0"
-                  type="submit"
-                  onClick={() =>
+                  onClick={(e) => {
+                    e.preventDefault();
                     Verify(
                       Data._id,
                       Data.filePath,
                       Data.fileType,
                       Data.fileKey,
                       Key
-                    )
-                  }
+                    );
+                  }}
                 >
                   Download file
                   {/* <span class="MuiTouchRipple-root css-w0pj6f"></span> */}
@@ -303,15 +306,6 @@ export default function Home() {
                   aria-label="delete"
                   size="large"
                   onClick={() => handleOpen(rows)}
-                >
-                  <FileDownloadIcon />
-                </IconButton>
-                <IconButton
-                  aria-label="delete"
-                  size="large"
-                  onClick={() =>
-                    Downloadfile(rows._id, rows.filePath, rows.fileType)
-                  }
                 >
                   <FileDownloadIcon />
                 </IconButton>
