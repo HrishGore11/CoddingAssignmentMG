@@ -1,0 +1,188 @@
+.App1 {
+  font-family: sans-serif;
+  width: 100%;
+  min-height: 100vh;
+  opacity: 1;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+  background: linear-gradient(
+        195deg,
+        rgba(66, 66, 74, 0.6),
+        rgba(25, 25, 25, 0.6)
+      )
+      center center / cover no-repeat,
+    url("../login/login.jpeg") transparent;
+  /* background-image: url("./login.jpeg"); */
+  background-position: top center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box {
+  width: 331.5px;
+  margin-left: 518.25px;
+  margin-right: 500px;
+  margin-top: 80px;
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  min-width: 0px;
+  overflow-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+  overflow: visible;
+  height: 488.25px;
+}
+
+.css-15m7mkq {
+  margin: -24px 16px 8px;
+  padding: 16px;
+  text-align: center;
+  opacity: 1;
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+  color: rgb(52, 71, 103);
+  border-radius: 0.5rem;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem,
+    rgb(0 187 212 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+
+.css-1139jqi {
+  margin: 8px 0px 0px;
+  font-size: 1.5rem;
+  line-height: 1.375;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.00735em;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+
+.css-1amtie4 {
+  padding-left: 25px;
+  padding-top: 24px;
+  padding-right: 25px;
+  user-select: none;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  fill: currentcolor;
+  flex-shrink: 0;
+  transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  font-size: inherit !important;
+}
+.css-dp2bsp {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  width: calc(100% + 24px);
+  margin-left: -24px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.css-1id64jh {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+}
+.css-oagsia {
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0px;
+  border: 0px;
+  margin: 0px;
+  cursor: pointer;
+  vertical-align: middle;
+  appearance: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.02857em;
+  min-width: 64px;
+  width: 100%;
+  display: inline-flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  transition: all 150ms ease-in 0s;
+  min-height: 2.5rem;
+  padding: 0.625rem 1.5rem;
+  background-image: linear-gradient(
+    195deg,
+    rgb(73, 163, 241),
+    rgb(26, 115, 232)
+  );
+  background-position-y: initial;
+  background-repeat: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: initial;
+  color: rgb(255, 255, 255);
+  box-shadow: rgb(26 115 232 / 15%) 0rem 0.1875rem 0.1875rem 0rem,
+    rgb(26 115 232 / 20%) 0rem 0.1875rem 0.0625rem -0.125rem,
+    rgb(26 115 232 / 15%) 0rem 0.0625rem 0.3125rem 0rem;
+  background-size: 150% !important;
+  background-position-x: 25% !important;
+}
+.css-w0pj6f {
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  inset: 0px;
+  border-radius: inherit;
+}
+.form-div1 {
+  margin: 25px;
+}
+.form-div2 {
+  margin-top: 20px;
+}
+.css-ne2rd {
+  margin-top: 24px;
+  margin-bottom: 8px;
+  text-align: center;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+}
+.css-18rmxgd {
+  margin: 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02857em;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: rgb(123, 128, 154);
+}

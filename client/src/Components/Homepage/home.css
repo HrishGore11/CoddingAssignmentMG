@@ -1,0 +1,103 @@
+.css-pwngrv-MuiPaper-root-MuiCard-root {
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  margin: 42px 548px;
+}
+
+.box11 {
+  width: 331.5px;
+  margin-left: 518.25px;
+  margin-right: 500px;
+  margin-top: 50px;
+  border-radius: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  display: flex;
+  flex-direction: column;
+  /* position: relative; */
+  min-width: 0px;
+  overflow-wrap: break-word;
+  background-color: rgb(255, 255, 255);
+  background-clip: border-box;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.75rem;
+  box-shadow: rgb(0 0 0 / 10%) 0rem 0.25rem 0.375rem -0.0625rem,
+    rgb(0 0 0 / 6%) 0rem 0.125rem 0.25rem -0.0625rem;
+  overflow: visible;
+  height: 488.25px;
+}
+.css-15m7mkq1 {
+  margin: -34px 16px 8px;
+  padding: 16px;
+  text-align: center;
+  opacity: 1;
+  background: linear-gradient(195deg, rgb(73, 163, 241), rgb(26, 115, 232));
+  color: rgb(52, 71, 103);
+  border-radius: 0.5rem;
+  box-shadow: rgb(0 0 0 / 14%) 0rem 0.25rem 1.25rem 0rem,
+    rgb(0 187 212 / 40%) 0rem 0.4375rem 0.625rem -0.3125rem;
+}
+.css-1139jqi1 {
+  margin: 8px 0px 0px;
+  font-size: 1.5rem;
+  line-height: 1.375;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  letter-spacing: 0.00735em;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+}
+.css-1vmcl1i1 {
+  margin: 8px 0px;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.02857em;
+  display: block;
+  opacity: 1;
+  text-transform: none;
+  vertical-align: unset;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.form-div11 {
+  margin: 25px;
+}
+.form-div21 {
+  margin-top: 20px;
+}
+/* .css-ne2rd {
+      margin-top: 24px;
+      margin-bottom: 8px;
+      text-align: center;
+      opacity: 1;
+      background: transparent;
+      color: rgb(52, 71, 103);
+      box-shadow: none;
+    } */
+.css-1id64jh1 {
+  margin-top: 32px;
+  margin-bottom: 8px;
+  opacity: 1;
+  background: transparent;
+  color: rgb(52, 71, 103);
+  box-shadow: none;
+}
+.css-11xur9t-MuiPaper-root-MuiTableContainer-root {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.87);
+  -webkit-transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px -1pxrgba (0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  width: 96% !important;
+  overflow-x: auto;
+  margin-left: 28px !important;
+  margin-right: 28px !important;
+}
