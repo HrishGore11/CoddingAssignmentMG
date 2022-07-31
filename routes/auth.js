@@ -7,8 +7,6 @@ const jwt = require("jsonwebtoken");
 const jwt_key = "sdfghjkla@$%&";
 const auth_user = require("../middleware/authuser");
 
-// const { create } = require("../models/user");
-
 ////////////////////////////////////signUp Route:
 /////////////////////////http://localhost:9046/api/auth/signUp
 router.post(
@@ -99,18 +97,5 @@ router.post(
     }
   }
 );
-
-//////////////////////////////////////////////////////////////////login Route :
-///////////////////////// http://localhost:9046/api/auth/User
-router.get("/User", auth_user, async (req, res) => {
-  try {
-    const user_id = req.user.id;
-    const user = await User.findById(user_id);
-    res.json({ message: "success", data: user });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("internal server error");
-  }
-});
 
 module.exports = router;

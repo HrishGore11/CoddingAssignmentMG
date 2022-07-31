@@ -1,11 +1,10 @@
 const uploadFile = require("../models/uploadfile");
 const express = require("express");
 const router = express.Router();
-const mongoose = require("mongoose");
 const multer = require("multer");
 const auth_user = require("../middleware/authuser");
 const fs = require("fs");
-const download = require("download");
+
 const Path = require("path");
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -89,13 +88,6 @@ router.get("/uploadedfiles_by_user", auth_user, async (req, res) => {
 });
 ////////////////////////////////////////////////// delete the particular file
 router.delete("/deletefile/:id", auth_user, async (req, res) => {
-  //   try {
-  //     const { id } = req.params._id;
-  //     const deletefile = await uploadFile.findByIdAndDelete(id);
-  //     res.json({ message: "successfully deleted", data: deletefile });
-  //   } catch (error) {
-  //     res.status(400).send(error.message);
-  //   }
   try {
     const id = req.params.id;
     let data = await uploadFile.findById(id);
@@ -108,7 +100,6 @@ router.delete("/deletefile/:id", auth_user, async (req, res) => {
       data = await uploadFile.findByIdAndDelete(id);
       fs.unlinkSync(data.filePath);
       res.json({ message: "data has been deleted successfully", data: data });
-      // fs.unlinkSync("{data.filePath}");
     }
   } catch (error) {
     res.status(400).send(error.message);
@@ -116,34 +107,6 @@ router.delete("/deletefile/:id", auth_user, async (req, res) => {
 });
 
 //////////////////////////////////////////////////download file by id
-// router.get("/downloadfile", async (req, res) => {
-//   try {
-//     console.log(req.file);
-//     const downloadfile = await uploadFile
-//       .find({ uploadedby: req.user._id })
-//       .populate("uploadedby", "_id Name");
-//     if (getfiles == "") {
-//       return res.json({ message: "files not found", success: false });
-//     } else {
-//       return res.json({ message: "success", success: true, data: getfiles });
-//     }
-//   } catch (error) {
-//     res.status(400).send(error.message);
-//   }
-// });
-// router.get("/downloadfile/:id", async (req, res) => {
-//   try {
-//     const id = req.params.id;
-//     let data = await uploadFile.findById(id);
-//     var x = Path.join(__dirname, "..", data.filePath);
-//     // console.log("..", __dirname, data.filePath);
-//     res.download(x);
-//     // res.json({ message: "download success", data: data });
-//   } catch (error) {
-//     res.status(400).send(error.message);
-//   }
-// });
-//////
 router.get("/downloadfile/:id", auth_user, async (req, res) => {
   try {
     const file = await uploadFile.findById(req.params.id);

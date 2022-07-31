@@ -5,10 +5,7 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import { useNavigate } from "react-router-dom";
 import Toolbar from "@mui/material/Toolbar";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-import MenuIcon from "@mui/icons-material/Menu";
-import AccountCircleRoundedIcon from "@mui/icons-material/AccountCircleRounded";
 import AccountCircle from "@mui/icons-material/AccountCircleRounded";
 import "../dashboard/dashboard.css";
 export default function Dashboard() {

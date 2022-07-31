@@ -108,7 +108,6 @@ export default function Home() {
           responseType: "blob",
           headers: {
             AUTHORIZATION: localStorage.getItem("token"),
-            // "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjJlMTk5OTY1MzcxNDg3YjBlY2UwNjdjIn0sImlhdCI6MTY1ODk1MjEwNX0.ouTQH7jWPoR2IJKDYVBnGWAJz2xikWdJ3lRHxlOoswY",
           },
         }
       );
